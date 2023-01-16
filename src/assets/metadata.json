@@ -1,0 +1,80 @@
+[
+	{
+		"id":1,
+		"nombre": "NIIICO",
+		"urlName": "niiico",
+		"artista": "niiico",
+		"artistaLink": "https://niiico.com",
+		"feat": "",
+		"featLink": "",
+		"url": "",
+		"imgUrl": "",
+		"tags": ["personal", "4fun"],
+        "bnew": false
+	},
+	{
+		"id":2,
+		"nombre": "Unholy",
+		"urlName": "unholy",
+		"artista": "Sam Smith",
+		"artistaLink": "",
+		"feat": "niiico",
+		"featLink": "https://niiico.com",
+		"url": "",
+		"imgUrl": "",
+		"tags": ["cover"],
+        "bnew": false
+	},
+	{
+		"id":3,
+		"nombre": "Una historia de ayer",
+		"urlName": "unahistoriadeayer",
+		"artista": "Lau Dan",
+		"artistaLink": "https://www.instagram.com/uknowwhoiam_7/",
+		"feat": "niiico",
+		"featLink": "https://niiico.com",
+		"url": "/uhda.mp3",
+		"imgUrl": "/imguhda.JPG",
+		"tags": ["4fun"],
+        "bnew": true
+	},
+	{
+		"id":4,
+		"nombre": "Believer",
+		"urlName": "believer",
+		"artista": "Imagine dragons",
+		"artistaLink": "https://www.instagram.com/imaginedragons/",
+		"feat": "niiico",
+		"featLink": "https://niiico.com",
+		"url": "/believer.mp3",
+		"imgUrl": "/imgbeliever.png",
+		"tags": ["cover"],
+        "bnew": false
+	},
+	{
+		"id":5,
+		"nombre": "Industry Baby",
+		"urlName": "industrybaby",
+		"artista": "Lil Nas X",
+		"artistaLink": "https://www.instagram.com/lilnasx/",
+		"feat": "niiico",
+		"featLink": "https://niiico.com",
+		"url": "/industrybaby.mp3",
+		"imgUrl": "/imgindustrybaby.png",
+		"tags": ["cover"],
+        "bnew": false
+	},
+	{
+		"id":6,
+		"nombre": "Stressed out",
+		"urlName": "stressedout",
+		"artista": "21 pilots",
+		"artistaLink": "https://twentyonepilots.com",
+		"feat": "niiico",
+		"featLink": "https://niiico.com",
+		"url": "/stressedout.mp3",
+		"imgUrl": "/imgstressedout.png",
+		"tags": ["cover"],
+        "bnew": false
+	}
+]
