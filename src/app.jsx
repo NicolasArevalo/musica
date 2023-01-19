@@ -43,21 +43,26 @@ export function App() {
 				<h1 class='text-gradient w-full text-center text-red-300'>Musiiica</h1>
 				<div
 					id='cancion'
-					class='w-full mx-auto p-2 md:max-w-3xl h-[50vh] md:h-[40vh] flex flex-col items-center justify-center'
+					class='w-full mx-auto p-2 md:max-w-3xl h-[60vh] md:h-[40vh] flex flex-col items-center justify-center'
 				>
 					<img
 						src={cancionActual.imgUrl}
 						alt={cancionActual.nombre}
-						class='aspect-square w-56 shadow-lg object-contain'
+						class='aspect-square w-56 shadow-lg'
 					/>
 					<h1 class='text-center mt-4 text-2xl font-semibold font-serif'>
 						{cancionActual.nombre}
 					</h1>
 
 					<p class='text-center text-gray-600'>
-						<a href={cancionActual.artistaLink}>{cancionActual.artista}</a> × <a href={cancionActual.featLink}>{cancionActual.feat}</a>
+						{
+							cancionActual.feat.length > 1
+							?<><a href={cancionActual.artistaLink}>{cancionActual.artista}</a> × <a href={cancionActual.featLink}>{cancionActual.feat}</a></>
+							:<a href={cancionActual.artistaLink}>{cancionActual.artista}</a>
+							 
+						}
 					</p>
-					<audio ref={audio} controls src={cancionActual.url}></audio>
+					<audio ref={audio} controls src={cancionActual.url} className="w-full my-2"></audio>
 				</div>
 				{/* <div
 					id='controles'

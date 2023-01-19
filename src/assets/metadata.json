@@ -1,16 +1,16 @@
 [
 	{
 		"id":1,
-		"nombre": "NIIICO",
-		"urlName": "niiico",
+		"nombre": "Inundación de letras",
+		"urlName": "inundaciondeletras",
 		"artista": "niiico",
 		"artistaLink": "https://niiico.com",
 		"feat": "",
 		"featLink": "",
-		"url": "",
-		"imgUrl": "",
-		"tags": ["personal", "4fun"],
-        "bnew": false
+		"url": "/InundacionDeLetras.mp3",
+		"imgUrl": "/idl.png",
+		"tags": ["personal"],
+        "bnew": true
 	},
 	{
 		"id":2,
