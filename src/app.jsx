@@ -9,21 +9,20 @@ import ControlesPlay from './components/ControlesPlay'
 import ControlesVolume from './components/ControlesVolume'
 
 export function App() {
-
-	const [ cancionActual, setCancionActual ] = useState({
+	const [cancionActual, setCancionActual] = useState({
 		imgUrl: '/imgbeliever.png',
 		artista: 'Imagine Dragons',
 		artistaLink: '/',
 		feat: 'niiico',
 		featLink: 'https://niiico.com',
-		nombre:'Believer',
+		nombre: 'Believer',
 		url: '/believer.mp3',
 	})
-	const [ estadoCancion, setEstadoCancion ] = useState(false)
+	const [estadoCancion, setEstadoCancion] = useState(false)
 
 	const audio = useRef()
 
-	const cambiarCancion = (prop) =>{
+	const cambiarCancion = prop => {
 		setCancionActual({
 			imgUrl: prop.imgUrl,
 			artista: prop.artista,
@@ -31,7 +30,7 @@ export function App() {
 			feat: prop.feat,
 			featLink: prop.featLink,
 			nombre: prop.nombre,
-			url: prop.url
+			url: prop.url,
 		})
 		audio.current.play()
 	}
@@ -40,10 +39,12 @@ export function App() {
 		<>
 			<Header />
 			<main class='w-full mx-auto p-2 md:max-w-3xl'>
-				<h1 class='text-gradient w-full text-center text-red-300'>Musiiica</h1>
+				<h1 class='text-gradient w-full text-center text-red-300 hidden'>
+					Musiiica
+				</h1>
 				<div
 					id='cancion'
-					class='w-full mx-auto p-2 md:max-w-3xl h-[60vh] md:h-[40vh] flex flex-col items-center justify-center'
+					class='w-full mx-auto p-2 md:max-w-3xl h-[60vh] md:h-[50vh] flex flex-col items-center justify-center'
 				>
 					<img
 						src={cancionActual.imgUrl}
@@ -55,14 +56,23 @@ export function App() {
 					</h1>
 
 					<p class='text-center text-gray-600'>
-						{
-							cancionActual.feat.length > 1
-							?<><a href={cancionActual.artistaLink}>{cancionActual.artista}</a> × <a href={cancionActual.featLink}>{cancionActual.feat}</a></>
-							:<a href={cancionActual.artistaLink}>{cancionActual.artista}</a>
-							 
-						}
+						{cancionActual.feat.length > 1 ? (
+							<>
+								<a href={cancionActual.artistaLink}>{cancionActual.artista}</a>{' '}
+								× <a href={cancionActual.featLink}>{cancionActual.feat}</a>
+							</>
+						) : (
+							<a href={cancionActual.artistaLink}>{cancionActual.artista}</a>
+						)}
 					</p>
-					<audio ref={audio} controls src={cancionActual.url} className="w-full my-2"></audio>
+					<div className='w-full fixed bottom-0 left-0 right-0 bg-[#f2f2fb] z-10'>
+						<audio
+							ref={audio}
+							controls
+							src={cancionActual.url}
+							className='w-full rounded-none'
+						></audio>
+					</div>
 				</div>
 				{/* <div
 					id='controles'
@@ -89,7 +99,7 @@ export function App() {
 								bnew,
 								artistaLink,
 								featLink,
-								imgUrl
+								imgUrl,
 							}) => {
 								if (url.length > 1)
 									return (
