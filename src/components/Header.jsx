@@ -3,7 +3,18 @@ import React from 'react'
 const Header = () => {
 	return (
 		<header class='w-full flex justify-between px-4 py-1 mx-auto mt-2 items-center md:max-w-3xl'>
-			<div></div>
+			<div>
+				<svg
+					id='Capa_1'
+					data-name='Capa 1'
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 280 280'
+					class='w-10 h-10'
+				>
+					<title>Niiico</title>
+					<polygon points='92 277 117.5 78.5 163 141.5 186.5 3.5 182 216.5 132 153 92 277' />
+				</svg>
+			</div>
 			<button class='heart'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
